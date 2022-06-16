@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Kopnus Suite" parallel="tests" thread-count="1">
+    <test name="Sahabat Kopnus">
+        <parameter name="DeviceUdid" value="emulator-5554" />
+        <parameter name="DeviceSerial" value="" />
+        <parameter name="AppiumPort" value="20000" />
+        <parameter name="SystemPort" value="8250" />
+        <classes>
+            <class name="runners.KopnusTestRunner" />
+        </classes>
+    </test>
+</suite> <!-- Suite -->
